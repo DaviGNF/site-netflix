@@ -10,12 +10,13 @@
 
 body{
   background: var(--preto);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial';
   color:white;
 }
 
 header .container{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -43,7 +44,7 @@ header nav a:hover{
 .filme-principal{
     font-size: 20px;
     text-align: justify;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) , url('/img/mindhunter.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) , url('../img/mindhunte.jpg');
     height: 600px;
     background-size: cover;
     display: flex;
@@ -52,12 +53,12 @@ header nav a:hover{
     align-content: flex-start;
 }
 .filme-principal .descricao{
-    margin-top: 20px;
-    margin-right: 800px;
+    width: 50%;
     margin-left: 20px;
+    margin-bottom: 5px;
 }
 .titulo{
-    margin-top: 80px;
+    margin-top: 15%;
     margin-left: 15px;
     font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -82,4 +83,14 @@ header nav a:hover{
 
 .botao i{
     margin-right: 5px;
+}
+
+.box-filme{
+    height:  100%;
+    width: 100%;
+    display: block; 
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
